@@ -1,5 +1,8 @@
 class Hello{
     public static void main(String a[]){
-        System.out.println("Hello,World!");
+        int time = 5;
+        char name = 'k';
+        System.out.println(time);
+        System.out.println(name);
     }
 }
