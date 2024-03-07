@@ -1,0 +1,27 @@
+class A{
+    A(){
+        
+        super();
+        System.out.println("in A");
+    }
+    A(int n){
+        super();
+        System.out.println("in A int");
+    }
+}
+class B extends A{
+    B(){
+        super();
+        System.out.println("in B");
+    }
+    B(int n){
+        super(5);
+        System.out.println("in B int");
+    }
+}
+public class superandthis {
+    public static void main(String[] args){
+        B obj = new B(5);
+    }
+    
+}
