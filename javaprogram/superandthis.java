@@ -15,7 +15,7 @@ class B extends A{
         System.out.println("in B");
     }
     B(int n){
-        super(5);
+        this();
         System.out.println("in B int");
     }
 }
