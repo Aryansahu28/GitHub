@@ -1,0 +1,6 @@
+Polymorphism stands with two words which Poly means "Many" and Morphism means "Behaviour" . When a function shows many behaviour is called Polymorphism.
+Polymorphism is two types i.e. Compile time Polymorphism and Run time Polymorphism 
+
+-> Compile Time Polymorphism : When the program already know which is going to run in overloading then it is called is Compile Time Polymorphism. Eg- add(int,int) and add(int,int,int) and if we call a function with three parameter and we already know which function is going to run.
+
+-> Run Time Polymorphism : When we know before and we only while running then we call it Run Time Polymorphism.It is achieved by method overriding.
