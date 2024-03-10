@@ -1,4 +1,4 @@
-package javaassignment;
+
 
 //Write a JAVA program to find the multiplication of given 4 numbers. Also find their geometric mean.
 
