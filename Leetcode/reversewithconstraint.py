@@ -1,23 +1,24 @@
 class Solution:
     def reverse(self, x : int) -> int:
-        if x>0:
-            x =int((str(x)[::-1]))
-            if x>(-1*pow(2,31)) or (x<pow(2,31)):
+        
+        a = str(x)
+        if a[0] == "-":
+            l = int(a[0] + a[(len(a)-1):0:-1])
+            if l>=2147483647:
+                return 0
+            elif l<=-2147483648:
                 return 0
             else:
-                return x 
+                return l
         else:
-            x = -1*x
-            x =-1*int((str(x)[::-1]))
-            if x>=(-1*pow(2,31)) or (x<=pow(2,31)):
-              return 0
+            l = int(a[::-1])
+            if l>=2147483647:
+                return 0
+            elif l<=-2147483648:
+                return 0
             else:
-              return x 
+                return l
             
-
-x = -123
+x = 1534236469
 s = Solution()
 print(s.reverse(x))
-        
-           
-
