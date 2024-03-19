@@ -1,1 +1,1 @@
-haystack[::len(neddle)]
+s.strStr(haystack,needle)
