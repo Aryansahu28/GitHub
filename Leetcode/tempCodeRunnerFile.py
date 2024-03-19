@@ -1,1 +1,1 @@
-num.sort()
+haystack[::len(neddle)]
