@@ -8,7 +8,9 @@ public class ass_b_3 {
         if(s>=11){
             while(s>1){
                 if(s%2==0){
+                    //NOthing
                     s=s/2;
+                
                     System.out.println(s);
                 }
                 else if (s==1){
