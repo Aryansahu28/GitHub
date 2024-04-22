@@ -1,19 +1,35 @@
-public class ass_c_6 {
-    public static void main(String args[]){
-        int[][] a ={
-            {2,4,6,8},
-            {0,3,6,9},
-            {0,0,4,8},
-            {0,0,0,5}
-        };
-        int flag=0;
-        for(int i=0;i<4;i++){
-            for(int j=0;j<4;j++){
-                if((i<j) & (a[i][j]==0)){
-                    flag=flag+1;
-                }
-            }
-        }
-        System.out.println(flag);
-    }
+// Java Program to check upper 
+// triangular matrix.
+import java.util.*;
+import java.lang.*;
+
+public class ass_c_6
+{
+	private static final int N = 4;
+
+	// Function to check matrix is in
+	// upper triangular form or not.
+	public static Boolean isUpperTriangularMatrix(int mat[][])
+	{
+		for (int i = 1; i < N ; i++)
+			for (int j = 0; j < i; j++)
+				if (mat[i][j] != 0)
+					return false;
+		return true;
+	} 
+	
+	// driver function
+	public static void main(String argc[]){
+		int[][] mat= { { 1, 3, 5, 3 },
+					{ 0, 4, 6, 2 },
+					{ 0, 0, 2, 5 },
+					{ 0, 0, 0, 6 } };
+					
+		if (isUpperTriangularMatrix(mat))
+			System.out.println("Yes");
+		else
+			System.out.println("No");
+	}
 }
+
+
