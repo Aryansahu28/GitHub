@@ -3,10 +3,11 @@ import java.awt.*;
 class awt_test extends Frame{
     awt_test(){
         Button b = new Button("Click here");
-        b.setBounds(500, 500, 500, 500);
-        b.setSize(800,800);
+        b.setBounds(30,100,80,30);
+        b.setSize(400,400);
         setLayout(null);
         setVisible(true);
+        add(b);
     }
 }
 public class awt1 {
