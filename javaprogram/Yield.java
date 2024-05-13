@@ -6,7 +6,7 @@ class A extends Thread{
     public void run(){
         for(int i =0 ;i<5;i++){
             if(i == 2) {
-                B t2 = new B()
+                B t2 = new B();
                 try{
                     t2.join();
                 }
