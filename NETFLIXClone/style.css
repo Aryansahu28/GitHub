@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url("allimg/IN-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_b00eeb83-a7e8-4b5b-8ff7-86ed92c51caf_large.jpg");
+    height: 80vh;
+}
+
+.main .box {
+    height: 80vh;
+    opacity: 0.44;
+}
