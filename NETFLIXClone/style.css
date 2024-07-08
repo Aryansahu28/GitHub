@@ -1,14 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: black;
+}
+
 .main {
+    position: relative;
     background-image: url("allimg/IN-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_b00eeb83-a7e8-4b5b-8ff7-86ed92c51caf_large.jpg");
-    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 644px;
 }
 
 .main .box {
-    height: 80vh;
+    height: 644px;
+    width: 100%;
     opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+.main img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.main>nav {
+    max-width: 60vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.main .name {
+    height: 80vh;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    gap: 25px;
+}
+
+.new-button {
+    position: relative;
+    z-index: 10;
+}
+
+.name> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.name> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.name> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.name input {
+    color: white;
+    padding-left: 24px;
+    color: black;
+    height: 50px;
+    width: 350px;
+    font-size: 18px;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    background-color: rgb(61, 61, 61);
+    opacity: 0.88;
+    font-weight: bold;
+}
+
+.new-button>button {
+    color: white;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 8px;
+    background-color: red;
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
 }
