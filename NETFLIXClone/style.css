@@ -81,25 +81,77 @@ nav button {
 
 .name input {
     color: white;
-    padding-left: 24px;
+    padding: 0px 21px;
     color: black;
     height: 50px;
     width: 350px;
-    font-size: 18px;
-    border: 1px solid whitesmoke;
-    border-radius: 8px;
-    background-color: rgb(61, 61, 61);
-    opacity: 0.88;
+    font-size: 12px;
+    border: 0.1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: rgba(23, 23, 23, 0.8);
     font-weight: bold;
 }
 
 .new-button>button {
+    position: relative;
+    bottom: -4px;
     color: white;
-    box-sizing: border-box;
+    font-weight: 700;
     border: 2px solid red;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: red;
     height: 50px;
     width: 200px;
     font-size: 25px;
+}
+
+@media only screen and (max-width:800px) {
+    .name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name> :nth-child(1) {
+        font-weight: 900;
+        font-size: 34px;
+    }
+    .name> :nth-child(2) {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .name> :nth-child(3) {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .name .new-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .name input {
+        margin-left: 14px;
+        padding: 0px 21px;
+        color: black;
+        height: 45px;
+        width: 210px;
+        font-size: 13px;
+        border: 0.1px solid whitesmoke;
+        border-radius: 5px;
+        background-color: rgba(23, 23, 23, 0.8);
+        font-weight: bold;
+    }
+    .new-button>button {
+        position: relative;
+        bottom: -4px;
+        color: white;
+        font-weight: 700;
+        border: 2px solid red;
+        border-radius: 5px;
+        background-color: red;
+        height: 45px;
+        width: 127px;
+        font-size: 18px;
+    }
 }
