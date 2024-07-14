@@ -59,6 +59,30 @@ nav button {
     gap: 25px;
 }
 
+nav select {
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    position: relative;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.8);
+    font-family: 'Poppins';
+    font-size: 14px;
+    width: 147px;
+    margin-left: 12px;
+    height: 41px;
+    z-index: 10;
+    font-family: 'Poppins';
+}
+
+.newS {
+    font-family: 'Poppins';
+    font-size: 14px;
+    width: 81px;
+    margin-left: 12px;
+    height: 40px;
+}
+
 .new-button {
     position: relative;
     z-index: 10;
@@ -101,15 +125,18 @@ nav button {
 }
 
 .separation {
-    border: 4px solid gray;
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
 }
 
 .btn-red {
     color: white;
     font-weight: 700;
-    border: 2px solid red;
+    border: 2px solid rgb(218, 5, 5);
     border-radius: 5px;
-    background-color: red;
+    background-color: rgb(218, 5, 5);
 }
 
 @media only screen and (max-width:800px) {
@@ -159,26 +186,122 @@ nav button {
 }
 
 .firstsection {
-    position: relative;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    /* max-width: 70vw; */
+    max-width: 79vw;
+}
+
+.firstsection :nth-child(2) {
+    position: relative;
 }
 
 .firstsection img {
-    width: 30vw;
+    top: 65px;
+    width: 38vw;
     position: relative;
     z-index: 10;
 }
 
 .firstsection video {
-    right: 11.5vw;
+    left: 67px;
+    bottom: 250px;
     position: absolute;
-    width: 22.5vw;
-    top: 65px;
+    width: 381px;
 }
 
+.headforfirstsection {
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+}
 
+.firstsection .heading1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.firstsection .heading2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    max-width: 79vw;
+}
+
+.second img {
+    top: 0px;
+    z-index: 0;
+}
+
+.second .imagebox {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 105px;
+    left: 120px;
+    position: relative;
+    border: 2px solid rgb(46, 44, 44);
+    border-radius: 12px;
+    height: 76px;
+    width: 266px;
+}
+
+.imagebox div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.second .imagebox img {
+    padding: 7px;
+    height: 52px;
+    width: 50px;
+}
+
+.lastheading {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faqhead {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 400;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faqhead .faq {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px solid rgb(113 110 110 / 40%);
+    background-color: rgb(113 110 110 / 40%);
+    height: 10vh;
+    width: 80vw;
+}
+
+.plus {
+    font-size: 62px;
+    font-weight: 100;
 }
