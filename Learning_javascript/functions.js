@@ -6,3 +6,9 @@ function call(name) {
 call("Ravi")
 call("Ahiravan")
 call("Shivam")
+
+const func1 = (x) => {
+    console.log("My hearts is stereo turn me up when feel low ohho oohohohooo hooho ", x);
+}
+
+func1(5)
