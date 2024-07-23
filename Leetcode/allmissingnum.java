@@ -11,8 +11,8 @@ public class allmissingnum {
     
  }   
  public static void swaps(int[] nums,int first,int second){
-    int temp = nums[first];
-    nums[first] = nums[second];
+ int temp = nums[first];
+ nums[first] = nums[second];
     nums[second] = temp;
 }
 public static List<Integer> findDisappearedNumbers(int[] nums){
