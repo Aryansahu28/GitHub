@@ -1,6 +1,6 @@
 public class patterns {
     public static void main(String[] args) {
-        pattern11(5);
+        pattern14(5);
     }
 
     public static void patterns1(int n) {
@@ -121,6 +121,93 @@ public class patterns {
                 System.out.print("* ");
             }
             System.out.println(" ");
+        }
+    }
+    public static void pattern12(int n){
+        for(int i=1;i<=2*n;i++){
+            if(i<=n){
+                 int spaces = i;
+            for (int s = 0; s < spaces; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= n-i; j++) {
+                System.out.print("* ");
+            }
+            }else{
+                
+            for (int s = 0; s <= 2*n-i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <i-n; j++) {
+                System.out.print("* ");
+            }
+            }
+            System.out.println(" ");
+        }
+    }
+    public static void pattern13(int n){
+    for(int i=1;i<=n;i++){
+            // Spaces before every mark
+            for(int s=1;s<=n-i;s++){
+                System.out.print(" ");
+            }
+            // for the first row
+            if(i==1){
+                System.out.print("* ");
+            }
+            else{
+                if(i<n){
+                   System.out.print("* ");
+                   for(int s=2;s<=2*i-2;s++){
+                    System.out.print(" ");
+                   }
+                   for(int j=1;j<2;j++){
+                    System.out.print("* ");
+                   }
+                }
+                else{
+                    
+                    for(int j=1;j<=2*n;j++){
+                        System.out.print("*");
+                    }
+                }
+            }
+            System.out.println(" ");
+        }
+    }
+    public static void pattern14(int n){
+    for(int i=n;i>=1;i--){
+            // Spaces before every mark
+            for(int s=1;s<=n-i;s++){
+                System.out.print(" ");
+            }
+            // for the first row
+            if(i==1){
+                System.out.print(" * ");
+            }
+            else{
+                if(i<n){
+                   System.out.print("* ");
+                   for(int s=2;s<=2*i-2;s++){
+                    System.out.print(" ");
+                   }
+                   for(int j=1;j<2;j++){
+                    System.out.print("* ");
+                   }
+                }
+                else{
+                    
+                    for(int j=1;j<=2*n;j++){
+                        System.out.print("*");
+                    }
+                }
+            }
+            System.out.println(" ");
+        }
+    }
+    public static void pattern15(int n){
+        for(int i=1;i<=2*n-1;i++){
+            // int totalCol
         }
     }
 }
