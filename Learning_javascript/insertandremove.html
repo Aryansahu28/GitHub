@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert and Remove in Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <p>Hey I am a box</p>
+            <p>Hey I am a box</p>
+        </div>
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.setAttribute("class", "created");
+        div.innerHTML = "I said to be inserted by innerHTML <b>by Aryan Sahu</b>"
+        document.querySelector(".container").prepend(div);
+    </script>
+</body>
+
+</html>
