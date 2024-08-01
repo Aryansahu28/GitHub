@@ -207,7 +207,7 @@ public class patterns {
     }
     public static void pattern15(int n){
         for(int i=1;i<=2*n-1;i++){
-            // int totalCol
+        //  intk   // int totalCol
         }
     }
 }
