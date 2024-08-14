@@ -1,5 +1,1 @@
-g())
-console.log(myDate.toLocaleString())
-console.log(myDate.toLocaleDateString())
-console.log(myDate.toLocaleTimeString())
-console.log(typeof myDate)
+email
