@@ -66,10 +66,27 @@ const course = {
 
 
 // You can recast name if it is too long to write again and again
-const{courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course
 
 // console.log(course.courseInstructor)
 
-// console.log(course.instructor)
+// console.log(instructor)
 
+// Json
+// {
+//     "name" : "hitesh",
+//     "coursename" : "js in hindi",
+//     "price" : "free"
+// }
+
+// Api can be given in the form of array
+
+[
+    {},
+    {}
+]
+
+
+// https://randomuser.me/
+// https://jsonformatter.org/
 
