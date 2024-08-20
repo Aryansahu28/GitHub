@@ -27,7 +27,7 @@ if(Object.keys(emptyObj).length ===0){
 
 // Nullliah Coalescing Operator (??): null undefined
 
-
+// Nothing
 let val1;
 val1 = 5 ?? 10;
 val1 = null ?? 10;
