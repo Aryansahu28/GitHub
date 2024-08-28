@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying to add using dom</title>
+    <style>
+        body{
+            background-color:#212121;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Python</li>
+    </ul>
+    <script>
+        const a = document.querySelector("ul");
+        a.className = "language lang"
+        function addingText(lang){
+            const li = document.createElement("li");
+            li.innerHTML = `${lang}`;
+            document.querySelector(".language").appendChild(li);
+            
+        }
+        addingText("typescript");
+
+        function appendOptiText(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li)
+        }
+
+        appendOptiText("Numpy")
+
+        // Edit
+
+        const 
+    </script>
+</body>
+</html>
