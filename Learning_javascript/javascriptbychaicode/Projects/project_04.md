@@ -1,3 +1,4 @@
+```javascript
 let randomnum = parseInt(Math.random()*100+1);
 
 const submit = document.querySelector("#subt");
@@ -83,3 +84,4 @@ function newGame(){
   startOver.removeChild(p);
   playGame = true;
 }
+```
