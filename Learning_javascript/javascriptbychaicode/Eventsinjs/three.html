@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+    <style>
+        body{
+            background-color:#212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<h1>Start and Stop Interval</h1>
+<button id="stop">Stop</button>
+<button id="start">Start</button>
+<body>
+    <script>
+        const sayDate = function(str){
+            console.log(str,Date.now());
+        }
+        const Itsinterval = setInterval(sayDate,1000,"hi")
+
+        clearInterval(Itsinterval);
+    </script>
+</body>
+</html>
