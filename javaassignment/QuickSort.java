@@ -23,7 +23,7 @@ public class QuickSort {
                 s++;
             }
             while(arr[e] > pivot){
-                e--;
+                e-=1;
             }
 
             if(s<=e){
