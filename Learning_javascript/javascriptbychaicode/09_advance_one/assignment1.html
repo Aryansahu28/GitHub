@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body{
+            background-color:#212121;
+            color:#fff;
+        }
+        .image{
+            border: 1px solid white;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        #clicked{
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+
+    </div>
+    
+    <div id="buttonwaladata">
+        <button id="clicked">Click here</button>
+    </div>
+    
+</body>
+<script>
+    const addimage = function(hisimage){
+        const a = document.querySelector('.image');
+        // a.style.backgroundColor = 'white';
+        
+        a.innerHTML += `<div><img src=${hisimage} height="100px" width= "100px"></div>`;
+        // document.querySelector('.image').appendChild(a); NO NEED TO DO THIS
+        
+    }
+
+    const add_info = function(name,followers){
+        const button = document.getElementById("clicked");
+        button.addEventListener('click',function(e){
+            
+            const i = document.getElementById('buttonwaladata');
+            i.innerHTML+= `<div>name : ${name} </div><div>followers : ${followers}</div>`;
+            // console.log(e.target);
+            let removeit = document.getElementById('clicked');
+            removeit.remove();
+
+        })
+    }
+    let data;
+    const requestURL = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestURL);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState == 4){
+
+            data = JSON.parse(this.responseText)
+            // console.log(typeof data.avatar_url)
+            addimage(data.avatar_url);
+            add_info(data.name,data.followers);
+        }
+    }
+     
+    
+    // addimage("hello")
+    // addimage("flower.jpeg");
+    
+    xhr.send();
+
+
+</script>
+</html>
