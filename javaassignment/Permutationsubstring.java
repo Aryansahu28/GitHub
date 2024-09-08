@@ -3,8 +3,9 @@ import java.util.ArrayList;
 
 public class Permutationsubstring {
     public static void main(String[] args){
-        ArrayList<String> ans = permuArray("","abc");
-        System.out.print(ans);
+        // ArrayList<String> ans = permuArray("","abc");
+        // System.out.print(ans);
+        System.out.print(permutationCount("","abcde"));
     }
 
     static void permutation(String p, String up){
@@ -37,5 +38,19 @@ public class Permutationsubstring {
             ans.addAll(permuArray(f + ch  + s , up.substring(1)));
         }
         return ans;
+    }
+
+    static int permutationCount(String p,String up){
+        if(up.isEmpty()){
+            return 1;
+        }
+        int count = 0;
+        char ch = up.charAt(0);
+        for(int i=0;i<=p.length();i++){
+            String f = p.substring(0,i);
+            String s = p.substring(i,p.length());
+            count = count + permutationCount(f+ch+s, up.substring(1));
+        }
+        return count;
     }
 }
