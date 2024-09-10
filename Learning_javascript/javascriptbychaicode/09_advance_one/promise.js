@@ -49,10 +49,13 @@ const promiseFour = new Promise(function(resolve,reject){
 promiseFour
 .then(function(){
     console.log("Is it running");
-    return user.username
+    return user.username;
 }).then((username) =>{
     console.log(username);
 }).catch(function(error){
     console.log(error);
 }).finally( () => console.log("The promise is either resolved or rejected"));
 
+const promiseFive = new Promise(function(resolve,reject){
+    
+})
