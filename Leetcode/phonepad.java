@@ -6,7 +6,7 @@ import java.util.List;
 
 public class phonepad{
     public static void main(String[] args){
-        List<String> list = letterCombinations("12");
+        List<String> list = letterCombinations("10");
         System.out.println(list);
     }
     public static List<String> letterCombinations(String digits) {
@@ -14,7 +14,12 @@ public class phonepad{
     }
 
     public static List<String> pad(String p , String up){
+        if(up.contains("0") || up.contains("*")){
+            List<String> s = new ArrayList<>();
+            return s;
+        }
         if(up.isEmpty()){
+            
             List<String> list = new ArrayList<>();
             list.add(p);
             return list;
