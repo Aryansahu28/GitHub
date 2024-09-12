@@ -18,9 +18,9 @@ console.log(gameName.charAt(2));
 console.log(gameName.indexOf('t'));
 
 const newSTring = gameName.substring(0,4);
-// console.log(newSTring);
+console.log(newSTring);
 
-const anotherString = gameName.slice(-12,5);
+const anotherString = gameName.slice(-12,4);
 console.log(anotherString);
 
 const newSTringOne = "   hitesh   "
