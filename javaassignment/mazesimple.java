@@ -9,6 +9,7 @@ public class mazesimple {
             return 1;
         }
         int left = count(r-1,c);
+        // LEFT COUNT 
         int right = count(r,c-1);
         return left+right;
     }
